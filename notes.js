@@ -13,7 +13,7 @@ function addNote() {
     const newNote = { title, content };
 
     axios.post(
-        'https://crudcrud.com/api/cbcf7079b0654b0d87edba1ba561e48b/todos',
+        'https://crudcrud.com/api/c15cac81fb6a4907ad5bd1d2104d39e8/TODOS',
         newNote
     )
     .then(response => {
@@ -50,7 +50,7 @@ function deleteNote(index) {
     const noteId = notes[index]._id;
 
     axios.delete(
-        `https://crudcrud.com/api/cbcf7079b0654b0d87edba1ba561e48b/todos/${noteId}`
+        `https://crudcrud.com/api/c15cac81fb6a4907ad5bd1d2104d39e8/TODOS/${noteId}`
     )
     .then(() => {
         notes.splice(index, 1);
